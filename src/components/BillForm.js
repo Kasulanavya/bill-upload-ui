@@ -22,7 +22,7 @@ function BillForm() {
     if (file.size > 5 * 1024 * 1024) {
       alert('File too large! Max 5MB allowed.');
       return;
-    }
+    }   
 
     setForm({ ...form, file });
     setPreview(URL.createObjectURL(file));
